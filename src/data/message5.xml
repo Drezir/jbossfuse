@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<order>
+    <customer>
+        <name>Philadelphia Zoo</name>
+        <city>Philadelphia PA</city>
+        <country>USA</country>
+    </customer>
+    <orderline>
+        <animal>giraffe</animal>
+        <quantity>2</quantity>
+    </orderline>
+</order>
+

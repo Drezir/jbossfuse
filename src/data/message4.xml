@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<order>
+    <customer>
+        <name>Berlin Zoo</name>
+        <city>Berlin</city>
+        <country>Germany</country>
+    </customer>
+    <orderline>
+        <animal>emu</animal>
+        <quantity>6</quantity>
+    </orderline>
+</order>

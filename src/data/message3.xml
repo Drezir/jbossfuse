@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<order>
+    <customer>
+        <name>Sea Life Centre</name>
+        <city>Munich</city>
+        <country>Germany</country>
+    </customer>
+    <orderline>
+        <animal>penguin</animal>
+        <quantity>15</quantity>
+       
+    </orderline>
+</order>
+

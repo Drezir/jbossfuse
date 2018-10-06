@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<order>
+  <customer>
+    <name>Bronx Zoo</name>
+    <city>Bronx NY</city>
+    <country>USA</country>
+  </customer>
+  <orderline>
+    <animal>wombat</animal>
+    <quantity>12</quantity>
+  </orderline>
+</order>

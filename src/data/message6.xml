@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<order>
+    <customer>
+        <name>St Louis Zoo</name>
+        <city>St Louis MO </city>
+        <country>USA</country>
+    </customer>
+    <orderline>
+        <animal>penguin</animal>
+        <quantity>10</quantity>
+    </orderline>
+</order>
