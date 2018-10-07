@@ -23,7 +23,7 @@ public class Example2RouteBuilder extends RouteBuilder {
 
         from("seda:fileProcessor?concurrentConsumers=10")
                 .choice()
-                .when().xpath(String.format("%s >= 10", orderQuantityXPath))
+                .when().xpath(String.format("%s > 10", orderQuantityXPath))
                     .log(LoggingLevel.WARN, logger, "Quantity exceeded standard limit of 10")
                     .setHeader("Destination", constant("Invalid"))
                     .to("file:target/messages/invalidOrders")
@@ -35,7 +35,7 @@ public class Example2RouteBuilder extends RouteBuilder {
 
         from("seda:orderFulfillment?concurrentConsumers=10")
                 .setHeader("country", xpath(orderCustomerCountryXPath))
-                .recipientList(simple("file:target/messages/country/${header.country}"))
+                .recipientList(simple("file:target/messages/validOrders/${header.country}"))
                 .removeHeader("country");
 
     }
